@@ -3,11 +3,12 @@ import { ActivatedRoute } from '@angular/router';
 import {Story} from '../data/Story';
 import {StoryService} from '../story.service'
 import { Location } from '@angular/common';
-import {MatTabsModule} from '@angular/material/tabs';
+import {CharactersListComponent} from '../characters-list/characters-list.component';
+import {PlotEditorComponent} from '../plot-editor/plot-editor.component';
 @Component({
   selector: 'app-story',
-  templateUrl: './story.component.html',
-  styleUrls: ['./story.component.scss']
+  templateUrl: './story.template.html',
+  styleUrls: ['./story.style.scss']
 })
 export class StoryComponent implements OnInit {
   story!: Story;

@@ -9,13 +9,16 @@ import { DashboardComponent } from './dashboard/dashboard.component';
 import { HttpClientModule } from '@angular/common/http';
 import { NoopAnimationsModule } from '@angular/platform-browser/animations';
 
-import {MatTabsModule} from '@angular/material/tabs';
+import {Tabs,Tab} from './tabs/tabs.component';
+import { CharactersListComponent } from './characters-list/characters-list.component';
+import { PlotEditorComponent } from './plot-editor/plot-editor.component';
 @NgModule({
   declarations: [
     AppComponent,
     StoryComponent,
     DashboardComponent,
-    StoryComponent
+    StoryComponent,
+    Tab,Tabs, CharactersListComponent, PlotEditorComponent
   ],
   imports: [
     BrowserModule,
@@ -23,7 +26,7 @@ import {MatTabsModule} from '@angular/material/tabs';
     AppRoutingModule,
     FormsModule,
     NoopAnimationsModule,
-    MatTabsModule
+    
   ],
   providers: [],
   bootstrap: [AppComponent]

@@ -1,0 +1,27 @@
+.tabs-container{
+    display: flex;
+    flex-direction: row;
+}
+.tab-wrapper{
+    
+    padding: 5px;
+    margin: 5px 5px 5px 0px;
+    background-color: var(--btn-color);
+    border-radius: 5px 5px 0px 0px;
+}
+.tab-wrapper:hover{
+    background-color: var(--primary-light);
+    cursor: pointer;
+}
+.tab-active{
+    
+    padding: 5px;
+    margin: 5px 5px 5px 0px;
+    display: flex;
+    align-items: center;
+    background-color: var(--txt-bckgrnd);
+    text-align: center;
+    border:1px solid var(--btn-color);
+    border-bottom: none;
+    border-radius: 5px 5px 0px 0px;
+}

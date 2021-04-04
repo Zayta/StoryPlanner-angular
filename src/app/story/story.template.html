@@ -8,10 +8,13 @@
     <button (click)="goBack()">Back to Dashboard</button>
 </div>
 <div class = 'content'>
-  <mat-tab-group>
-    <mat-tab dynamicHeight label="First"> Content 1 </mat-tab>
-    <mat-tab dynamicHeight label="Second"> Content 2 </mat-tab>
-    <mat-tab dynamicHeight label="Third"> Content 3 </mat-tab>
-  </mat-tab-group>
+  <div class = 'story-editor'>
+    <div class = 'plot-editor-container'>
+    <app-plot-editor></app-plot-editor>
+  </div>
+    <div class = 'characters-list-container'>
+      <app-characters-list></app-characters-list>
+    </div>
+  </div>
 </div>
 </div>
