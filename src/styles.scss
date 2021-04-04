@@ -1,15 +1,29 @@
+@import './theme.scss'
 /* You can add global styles to this file, and also import other style files */
-:root{
-    --text-color-dark:#000000;
-    --text-color-light:#ffffff;
-    --background-color:#f9f9f8;
-    --txt-background:#ffffff;
-    --btn-color:#5884A0;
-    --primary-light: #cce0e8;
-    --primary-dark:#005f76;
+// :root{
+//     --text-color-dark:#000000;
+//     --text-color-light:#ffffff;
+//     --background-color:#f9f9f8;
+//     --txt-background:#ffffff;
+//     --btn-color:#5884A0;
+//     --primary-light: #cce0e8;
+//     --primary-dark:#005f76;
 
 
-}
-body{
-    background-color: var(--background-color);
-}
+// }
+// body{
+//     background-color: var(--background-color);
+//     box-sizing: border-box;
+// }
+// button{
+//     border:none;
+//     border-radius: 5px;
+//     background-color:var(--btn-color);
+//     color:var(--text-color-light);
+//     padding:5px;
+// }
+// button:hover{
+//     background-color: var(--primary-light);
+// }
+html, body { height: 100%; }
+body { margin: 0; font-family: Roboto, "Helvetica Neue", sans-serif; }

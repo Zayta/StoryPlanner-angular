@@ -1,11 +1,17 @@
+<div class = 'container'>
+<div class ='header-info' *ngIf="story">
+  <div>
+    <h1 contentEditable="true" >{{story.name}}</h1>
+  </div>
+    
 
-<div *ngIf="story">
-    <h2>{{story.name | uppercase}} Details</h2>
-    <div><span>id: </span>{{story.id}}</div>
-    <div>
-      <label for="story-name">Story name: </label>
-      <input id="story-name" [(ngModel)]="story.name" placeholder="name">
-    </div>
-
-    <button (click)="goBack()">go back</button>
+    <button (click)="goBack()">Back to Dashboard</button>
+</div>
+<div class = 'content'>
+  <mat-tab-group>
+    <mat-tab dynamicHeight label="First"> Content 1 </mat-tab>
+    <mat-tab dynamicHeight label="Second"> Content 2 </mat-tab>
+    <mat-tab dynamicHeight label="Third"> Content 3 </mat-tab>
+  </mat-tab-group>
+</div>
 </div>

@@ -3,6 +3,7 @@ import { ActivatedRoute } from '@angular/router';
 import {Story} from '../data/Story';
 import {StoryService} from '../story.service'
 import { Location } from '@angular/common';
+import {MatTabsModule} from '@angular/material/tabs';
 @Component({
   selector: 'app-story',
   templateUrl: './story.component.html',

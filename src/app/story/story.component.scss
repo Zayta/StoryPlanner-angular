@@ -1,0 +1,46 @@
+.container{
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    justify-content: space-between;
+    min-height: 80vh;
+    box-sizing: border-box;
+}
+.header-info{
+    display:flex;
+    flex-direction: column;
+    width:15%;
+    height:inherit;
+    justify-content: space-between;
+    text-align: center;
+}
+.content{
+    display: block;
+    width: 80%;
+    border-radius: 5px;
+    padding:10px;
+}
+.header-info+.content{
+    margin: 10px;
+}
+button{
+    width: min-content;
+}
+:host ::ng-deep .mat-tab-label{
+    // background-color: var(--btn-color);
+    opacity:1;
+    // color:var(--text-color-light);
+    border-radius: 5px;
+    margin-right: 10px;
+}
+:host ::ng-deep .mat-tab-label:hover{
+    
+    // background-color: var(--primary-light);
+    // color:var(--text-color-dark);
+}
+
+:host ::ng-deep .mat-tab-label-active{
+    
+    // background-color: var(--txt-background);
+    // color:var(--text-color-dark);
+}
