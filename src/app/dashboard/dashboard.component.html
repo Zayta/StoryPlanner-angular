@@ -1,0 +1,6 @@
+<h2>Recent Stories</h2>
+<div class="stories-menu">
+  <a *ngFor="let story of stories" [routerLink]="['/story', story.id]">
+    {{story.name}}
+  </a>
+</div>
