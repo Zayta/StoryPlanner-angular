@@ -6,7 +6,7 @@ import { Location } from '@angular/common';
 import {CharactersListComponent} from '../characters-list/characters-list.component';
 import {PlotEditorComponent} from '../plot-editor/plot-editor.component';
 @Component({
-  selector: 'app-story',
+  selector: 'story',
   templateUrl: './story.template.html',
   styleUrls: ['./story.style.scss']
 })

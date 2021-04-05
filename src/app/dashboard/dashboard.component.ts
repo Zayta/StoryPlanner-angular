@@ -3,7 +3,7 @@ import { Story } from '../data/Story';
 import { StoryService } from '../story.service';
 
 @Component({
-  selector: 'app-dashboard',
+  selector: 'dashboard',
   templateUrl: './dashboard.component.html',
   styleUrls: [ './dashboard.component.scss' ]
 })

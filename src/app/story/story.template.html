@@ -10,10 +10,10 @@
 <div class = 'content'>
   <div class = 'story-editor'>
     <div class = 'plot-editor-container'>
-    <app-plot-editor></app-plot-editor>
+    <plot-editor></plot-editor>
   </div>
     <div class = 'characters-list-container'>
-      <app-characters-list></app-characters-list>
+      <characters-list [characters]='story.characters'></characters-list>
     </div>
   </div>
 </div>

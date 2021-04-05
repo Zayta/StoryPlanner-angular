@@ -1,7 +1,7 @@
 import { Component, OnInit } from '@angular/core';
 
 @Component({
-  selector: 'app-plot-editor',
+  selector: 'plot-editor',
   templateUrl: './plot-editor.component.html',
   styleUrls: ['./plot-editor.component.scss']
 })
