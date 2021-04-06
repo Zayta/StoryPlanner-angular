@@ -6,7 +6,7 @@
     
     padding: 5px;
     margin: 5px 5px 5px 0px;
-    background-color: var(--btn-color);
+    background-color: var(--main-btn-color);
     border-radius: 5px 5px 0px 0px;
 }
 .tab-wrapper:hover{
@@ -21,7 +21,7 @@
     align-items: center;
     background-color: var(--txt-bckgrnd);
     text-align: center;
-    border:1px solid var(--btn-color);
+    border:1px solid var(--main-btn-color);
     border-bottom: none;
     border-radius: 5px 5px 0px 0px;
 }

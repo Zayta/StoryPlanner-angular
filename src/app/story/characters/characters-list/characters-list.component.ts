@@ -1,5 +1,5 @@
 import { Component, OnInit,Input } from '@angular/core';
-import {Character} from '../data/Story';
+import {Character} from '../../../data/Story';
 import {NgForm} from '@angular/forms' ;
 import {
   CdkDragDrop,
@@ -31,7 +31,13 @@ export class CharactersListComponent implements OnInit {
   
 
 
-
+  remove(character:Character){
+    console.log('removing character...')
+    const index: number = this.characters.indexOf(character);
+    if (index !== -1) {
+        this.characters.splice(index, 1);
+    }
+  }
 
   drop(event: CdkDragDrop<Character[]>) {
     console.log(event);

@@ -3,7 +3,7 @@
 
   <div>
     <!-- container for both list  -->
-      <h3>In Scene:</h3>
+      <h5>In Scene:</h5>
       
     <div class = 'drop-box'
       cdkDropList
@@ -13,11 +13,14 @@
       (cdkDropListDropped)="drop($event)">
       <div class = 'draggable-item' *ngFor="let character of inScene" cdkDrag>
         <div class = 'drag-content'>
+          
         <character-details [character] = 'character'></character-details>
+        
+      <button class = 'list-item-delete-btn' >X</button>
       </div>
-        <div class = 'drag-instruction'>
+        <!-- <div class = 'drag-instruction'>
          <drag-icon></drag-icon> 
-        </div>
+        </div> -->
        
       </div>
       </div>
@@ -28,7 +31,7 @@
 
     <div>
   
-      <h3>Not In Scene:</h3>
+      <h5>Not In Scene:</h5>
       
     <div class = 'drop-box'
       cdkDropList
@@ -38,11 +41,15 @@
       (cdkDropListDropped)="drop($event)">
       <div class = 'draggable-item'*ngFor="let character of outOfScene" cdkDrag>
         <div class = 'drag-content'>
+          
         <character-details [character] = 'character'></character-details>
+      
+        <button (click)="remove(character)" class = 'list-item-delete-btn'>X</button>  
         </div>
-        <div class = 'drag-instruction'>
+      
+        <!-- <div class = 'drag-instruction'>
          <drag-icon></drag-icon> 
-        </div>
+        </div> -->
        
         
       </div>

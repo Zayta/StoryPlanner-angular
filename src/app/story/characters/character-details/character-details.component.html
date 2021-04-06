@@ -1,0 +1,9 @@
+<div class = 'chara-details-wrapper' *ngIf="character">
+    <div class = 'character-name'(click)="toggleDetails()" >{{character.name}}</div>
+    
+    <div [ngClass]="showDetails ? 'show' : 'hidden'">
+      <textarea autosize id="name-{{character.id}}" [(ngModel)]="character.name" placeholder="character name"></textarea>
+      
+      <textarea autosize id="summary-{{character.id}}" [(ngModel)]="character.summary" placeholder="character name"></textarea>
+    </div>
+  </div>

@@ -4,7 +4,7 @@
     --text-color-light:#ffffff;
     --background-color:#ffffff;
     --txt-background:#ffffff;
-    --btn-color:#5884A0;
+    --main-btn-color:#5884A0;
     --primary-light: #cce0e8;
     --primary-dark:#005f76;
 
@@ -21,7 +21,7 @@ body{
 button{
     border:none;
     border-radius: 5px;
-    background-color:var(--btn-color);
+    background-color:var(--main-btn-color);
     color:var(--text-color-light);
     padding:5px;
 }

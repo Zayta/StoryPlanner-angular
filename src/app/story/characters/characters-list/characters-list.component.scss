@@ -1,11 +1,11 @@
+
 h1,h2{
     text-align: center;
 }
+h3,h4,h5,h6{
+    margin:1px 0px 1px 0px;
+}
 .app-characters-list-wrapper{
-    border:1px solid var(--primary-dark);
-    border-radius: 5px;
-    width: 100%;
-    height:100%;
     padding:5px;
 }
 .drop-box{
@@ -19,15 +19,22 @@ h1,h2{
     justify-content: space-between;
     border-radius: 5px;
     margin:5px 0 5px 0;
-    
-    
+    cursor: move; /* fallback if grab cursor is unsupported */
+    cursor: grab;
+    cursor: -moz-grab;
+    cursor: -webkit-grab;
+}
+.draggable-item:active {
+    cursor: grabbing;
+    cursor: -moz-grabbing;
+    cursor: -webkit-grabbing;
 }
 .drag-content{
-    padding:5px;
     border-radius: 5px;
-    height: 100%;
-    min-width: fit-content;
-    width: 90%;
+    height: fit-content;
+    display:flex;
+    overflow: wrap;
+    width: 100%;
     border:1px solid var(--primary-light);
     background-color: var(--primary-light);
 }
@@ -51,4 +58,20 @@ h1,h2{
     display: flex;
     align-items: center;
     justify-content: center;
+}
+@media only screen and (max-width: 900px){
+    .drag-instruction{
+        display: none;
+    }
+}
+character-details{
+    width: 100%;
+}
+button.list-item-delete-btn{
+    background-color: var(--primary-light);
+    cursor: pointer;
+    color:black;
+    height: min-content;
+    width: min-content;
+    box-sizing: border-box;
 }

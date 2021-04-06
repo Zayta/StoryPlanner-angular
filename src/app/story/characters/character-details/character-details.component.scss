@@ -1,0 +1,36 @@
+.chara-details-wrapper{
+   
+ min-height: 100%;
+ width: 100%;
+ box-sizing: border-box;
+}
+.character-name{
+    padding:5px;
+    overflow-wrap: anywhere;
+    min-height: 100%;
+    width: 100%;
+    cursor:pointer;
+    
+ max-width: fit-content;
+}
+.hidden{
+    display:none;
+}
+.show{
+    display:block;
+    color:var(--txt-color-dark);
+    background-color: var(--txt-background);
+    padding:5px;
+    margin:5px;
+    border-radius: 2px;
+}
+textarea, input { 
+    border:1px solid #f9f9f9; 
+    font-size: 1em;
+    resize: none;
+    width: 100%; 
+    box-sizing: border-box;}
+label{
+    display: none;
+    font-size: 0.8em;
+}

@@ -3,8 +3,8 @@ import { ActivatedRoute } from '@angular/router';
 import {Story} from '../data/Story';
 import {StoryService} from '../story.service'
 import { Location } from '@angular/common';
-import {CharactersListComponent} from '../characters-list/characters-list.component';
-import {PlotEditorComponent} from '../plot-editor/plot-editor.component';
+import {CharactersListComponent} from './characters/characters-list/characters-list.component';
+import {PlotEditorComponent} from './plot/plot-editor/plot-editor.component';
 @Component({
   selector: 'story',
   templateUrl: './story.template.html',
