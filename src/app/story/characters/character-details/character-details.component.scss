@@ -6,12 +6,17 @@
 }
 .character-name{
     padding:5px;
-    overflow-wrap: anywhere;
+    overflow-wrap: break-word;
     min-height: 100%;
     width: 100%;
     cursor:pointer;
     
  max-width: fit-content;
+}
+@media only screen and (max-width: 600px){
+    .character-name{
+        overflow-wrap: anywhere;
+    }
 }
 .hidden{
     display:none;
