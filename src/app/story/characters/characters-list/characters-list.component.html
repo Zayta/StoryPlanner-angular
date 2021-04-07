@@ -16,7 +16,7 @@
           
         <character-details [character] = 'character'></character-details>
         
-      <button class = 'list-item-delete-btn' >X</button>
+      <button (click)="remove(character)" class = 'list-item-delete-btn' >X</button>
       </div>
         <!-- <div class = 'drag-instruction'>
          <drag-icon></drag-icon> 

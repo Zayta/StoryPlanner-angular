@@ -17,7 +17,8 @@
     display:none;
 }
 .show{
-    display:block;
+    display:flex;
+    flex-direction: column;
     color:var(--txt-color-dark);
     background-color: var(--txt-background);
     padding:5px;

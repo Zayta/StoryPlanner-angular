@@ -33,9 +33,13 @@ export class CharactersListComponent implements OnInit {
 
   remove(character:Character){
     console.log('removing character...')
-    const index: number = this.characters.indexOf(character);
-    if (index !== -1) {
-        this.characters.splice(index, 1);
+    const inSceneIndex: number = this.inScene.indexOf(character);
+    if (inSceneIndex !== -1) {
+        this.inScene.splice(inSceneIndex, 1);
+    }
+    const outSceneIndex: number = this.outOfScene.indexOf(character);
+    if (outSceneIndex !== -1) {
+        this.outOfScene.splice(outSceneIndex, 1);
     }
   }
 
