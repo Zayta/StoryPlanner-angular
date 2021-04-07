@@ -13,5 +13,5 @@ export interface Character {
 export interface Scene{
     id:string;
     title:string;
-    scene:any;
+    details:any;
 }

@@ -17,7 +17,7 @@ import { PlotEditorComponent } from './story/plot/plot-editor/plot-editor.compon
 import { CharacterDetailsComponent } from './story/characters/character-details/character-details.component';
 import { HeaderComponent } from './components/header/header.component';
 import { FooterComponent } from './components/footer/footer.component';
-import { SceneComponent } from './story/plot/scene/scene.component';
+import { SceneDetailsComponent } from './story/plot/scene-details/scene-details.component';
 @NgModule({
   declarations: [
     AppComponent,
@@ -28,7 +28,7 @@ import { SceneComponent } from './story/plot/scene/scene.component';
     PlotEditorComponent, 
     CharacterDetailsComponent, 
     HeaderComponent, 
-    FooterComponent, SceneComponent
+    FooterComponent, SceneDetailsComponent
   ],
   imports: [
     BrowserModule,

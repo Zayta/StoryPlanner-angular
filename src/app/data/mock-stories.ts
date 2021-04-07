@@ -9,7 +9,7 @@ let randomCharacter=()=>{return {
 let randomScene=()=>{return{
   id:'1'+Math.random(),
   title:'title'+Math.random(),
-  scene:1
+  details:'lala'+Math.random()
 }
 }
 export const STORIES: Story[] = [

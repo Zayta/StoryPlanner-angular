@@ -1,6 +1,5 @@
 import { Component, OnInit,Input } from '@angular/core';
 import {Character} from '../../../data/Story';
-import {NgForm} from '@angular/forms' ;
 import {
   CdkDragDrop,
   moveItemInArray,
@@ -16,9 +15,8 @@ export class CharactersListComponent implements OnInit {
   
   @Input() characters:Character[];
   title = 'Characters';
-  taskName  = String;
-  inSceneList = String;
-  arr = [];
+  inSceneList:string;
+  notInSceneList:string;
 
   public inScene: Character[];
   public outOfScene: Character[];

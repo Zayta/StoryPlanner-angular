@@ -10,7 +10,7 @@
 <div class = 'content'>
   <div class = 'story-editor'>
     <div class = 'plot-editor-container'>
-    <plot-editor></plot-editor>
+    <plot-editor [scenes]='story.scenes'></plot-editor>
   </div>
     <div class = 'characters-list-container'>
       <characters-list [characters]='story.characters'></characters-list>

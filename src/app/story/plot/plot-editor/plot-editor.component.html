@@ -1,3 +1,25 @@
 <div class = 'plot-editor-wrapper'>
-    <scene></scene>
-</div>
+    <h2>Plot</h2>
+  
+    <div>
+      <div class = 'drop-box'
+        cdkDropList
+        #scenesList="cdkDropList"
+        [cdkDropListData]="scenes"
+        (cdkDropListDropped)="drop($event)">
+            <div class = 'draggable-item' *ngFor="let scene of scenes" cdkDrag>
+            <div class = 'drag-content'>
+                
+            <scene-details [scene] = 'scene'></scene-details>
+            
+            <button (click)="remove(scene)" class = 'list-item-delete-btn' >X</button>
+            </div>
+            </div>
+        </div>
+      
+    </div>
+  
+  
+  
+  
+  </div>
