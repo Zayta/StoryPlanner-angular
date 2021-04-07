@@ -6,10 +6,16 @@ let randomCharacter=()=>{return {
   summary:'summary'+Math.random(),
   details:'details'+Math.random(),
 }}
+let randomScene=()=>{return{
+  id:'1'+Math.random(),
+  title:'title'+Math.random(),
+  scene:1
+}
+}
 export const STORIES: Story[] = [
-  { id: '11', name: 'Dr Nice',characters:[randomCharacter(),randomCharacter()]},
-  { id: '12', name: 'Narco' ,characters:[randomCharacter(),randomCharacter(),randomCharacter(),randomCharacter(),randomCharacter()]},
-  { id: '13', name: 'Bombasto' ,characters:[randomCharacter()]},
-  { id: '14', name: 'Celeritas' ,characters:[randomCharacter(),randomCharacter(),randomCharacter()]},
-  { id: '15', name: 'Magneta' ,characters:[randomCharacter()]}
+  { id: '11', name: 'Dr Nice',characters:[randomCharacter(),randomCharacter()],scenes:[]},
+  { id: '12', name: 'Narco' ,characters:[randomCharacter(),randomCharacter(),randomCharacter(),randomCharacter(),randomCharacter()],scenes:[randomScene(),randomScene(),randomScene(),randomScene(),randomScene()]},
+  { id: '13', name: 'Bombasto' ,characters:[randomCharacter()],scenes:[]},
+  { id: '14', name: 'Celeritas' ,characters:[randomCharacter(),randomCharacter(),randomCharacter()],scenes:[]},
+  { id: '15', name: 'Magneta' ,characters:[randomCharacter()],scenes:[]}
 ];

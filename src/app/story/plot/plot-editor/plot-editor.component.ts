@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import {SceneComponent} from '../scene/scene.component';
 
 @Component({
   selector: 'plot-editor',
