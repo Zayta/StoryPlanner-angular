@@ -1,7 +1,12 @@
 <h2>Recent Stories</h2>
+<input [(ngModel)]="newStoryName" type="text" 
+                    value="" class="col-7 form-control"
+                        style="width:300px;">
+<button (click) = 'addStory()'>Add Story</button>
+<div></div>
 <div class="stories-menu">
-  <a *ngFor="let story of stories" [routerLink]="['/story', story.id]">
+  <div class = 'book' *ngFor="let story of stories; let index = index;" [routerLink]="['/story', story.id]">
     {{story.name}}
-  </a>
-  <button (click) = 'addStory()'>AddStory</button>
+    <button class = 'del'(click) = "deleteStory(index)">X</button>
+  </div>
 </div>

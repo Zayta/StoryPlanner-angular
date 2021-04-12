@@ -7,7 +7,7 @@
   align-content: flex-start;
   align-items: flex-start;
 }
-a{
+.book{
     display: flex;
     align-items: center;
     justify-content: center;
@@ -22,7 +22,7 @@ a{
     
     font-size: large;
 }
-a:hover{
+.book:hover{
     background-color: var(--primary-light);
     color:var(--text-color-dark);
     cursor: pointer;
@@ -30,4 +30,7 @@ a:hover{
 h2{
     display: flex;
     justify-content: center;
+}
+.del:hover{
+    background-color: #bd0f15;
 }
