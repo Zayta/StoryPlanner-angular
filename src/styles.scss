@@ -7,7 +7,7 @@
     --main-btn-color:#5884A0;
     --primary-light: #cce0e8;
     --primary-dark:#005f76;
-
+    --txt-color-shade:#e5e3e3;
 
 }
 h1{
@@ -19,17 +19,56 @@ body{
     box-sizing: border-box;
 }
 button{
+    
     border:none;
     border-radius: 5px;
-    background-color:var(--main-btn-color);
-    color:var(--text-color-light);
     padding:5px;
 }
-button:hover{
+button.main{
+    background-color:var(--main-btn-color);
+    color:var(--text-color-light);
+}
+button.main:hover{
     background-color: var(--primary-light);
 }
 *:focus {
   outline: 0;
 }
-html, body { height: 100%; }
+textarea {
+    border-radius: 2px;
+    padding:10px;
+    font-family: Lato, serif;
+    font-size:18px;
+    font-style: inherit;
+    font-variant-ligatures: inherit;
+    font-variant-caps: inherit;
+    font-variant-numeric: inherit;
+    font-variant-east-asian: inherit;
+    font-weight: inherit;
+    font-stretch: inherit;
+    font-size: inherit;
+    line-height: inherit;
+    font:inherit;
+
+}
+
+@font-face {
+    font-family: clarity;
+    src: url('./assets/fonts/kingthings-clarity/Kingthings_Clarity1.1.ttf');
+}
+html, body { height: 100%; line-height: 1.4;}
 body { margin: 0; font-family: Roboto, "Helvetica Neue", sans-serif; }
+:after, :before {
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+}
+.dark-theme{
+    background-color: var(--primary-dark);
+    color:var(--text-color-light);
+}
+.light-theme{
+    
+    background-color: var(--primary-light);
+    color:var(--text-color-dark);
+}

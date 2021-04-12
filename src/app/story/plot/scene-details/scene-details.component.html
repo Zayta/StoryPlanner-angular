@@ -1,9 +1,9 @@
-<div class = 'chara-details-wrapper' *ngIf="scene">
-    <div class = 'scene-title'(click)="toggleDetails()" >{{scene.title}}</div>
+<div class = 'scene-details-wrapper' *ngIf="scene">
+    <div class = 'scene-title'(click)="toggleDetails()" >{{scene.title | titlecase }}</div>
     
     <div [ngClass]="showDetails ? 'show' : 'hidden'">
       <textarea autosize id="title-{{scene.id}}" [(ngModel)]="scene.title" placeholder="scene title"></textarea>
       
-      <textarea autosize id="summary-{{scene.id}}" [(ngModel)]="scene.details" placeholder="scene title"></textarea>
+      <textarea class = 'para' autosize id="summary-{{scene.id}}" [(ngModel)]="scene.details" placeholder="scene title"></textarea>
     </div>
   </div>

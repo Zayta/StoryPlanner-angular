@@ -5,12 +5,13 @@
   </div>
     
 
-    <button (click)="goBack()">Back to Dashboard</button>
+    <button class = 'main' (click)="goBack()">Back to Dashboard</button>
 </div>
 <div class = 'content'>
   <div class = 'story-editor'>
     <div class = 'plot-editor-container'>
     <plot-editor [scenes]='story.scenes'></plot-editor>
+    <button (click) = "addScene()">Add Scene</button>
   </div>
     <div class = 'characters-list-container'>
       <characters-list [characters]='story.characters'></characters-list>

@@ -1,6 +1,6 @@
 import { Component, OnInit, Input } from '@angular/core';
 import { ActivatedRoute } from '@angular/router';
-import {Story} from '../data/Story';
+import {Story,Scene} from '../data/Story';
 import {StoryService} from '../story.service'
 import { Location } from '@angular/common';
 import {CharactersListComponent} from './characters/characters-list/characters-list.component';
@@ -32,7 +32,14 @@ export class StoryComponent implements OnInit {
     this.storyService.getStory(id)
       .subscribe(story => this.story = story);
   }
-
+  addScene(){
+    this.story.scenes.push({
+      id:'New',
+      title:'New Title',
+      details:'details'
+    });
+    
+  }
   goBack(): void {
     this.location.back();
   }

@@ -20,6 +20,7 @@ export class PlotEditorComponent implements OnInit {
   ngOnInit(): void {
     
   }
+  
   remove(scene:Scene){
     const index: number = this.scenes.indexOf(scene);
     if (index !== -1) {

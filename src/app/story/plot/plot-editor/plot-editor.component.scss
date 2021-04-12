@@ -1,4 +1,78 @@
 .plot-editor-wrapper{
+    padding:5px;
     
-    
+}
+
+h1,h2{
+    text-align: center;
+}
+h3,h4,h5,h6{
+    margin:1px 0px 1px 0px;
+}
+
+
+.draggable-item {
+    display: flex;
+    justify-content: space-between;
+    border-radius: 5px;
+    margin:10px 0 10px 0;
+    // cursor: pointer;
+    border:1px solid #e9e9e9;
+    background-color: var(--txt-color-shade);
+}
+.draggable-item:hover{
+    // background-color: var(--primary-light);
+}
+.drag-content{
+    border-radius: 5px;
+    height: fit-content;
+    display:flex;
+    justify-content: space-between;
+    overflow-wrap:anywhere;
+    width: 100%;
+    // border:1px solid var(--primary-dark);
+    // background-color: var(--primary-dark);
+}
+
+
+button.list-item-delete-btn{
+    // background-color: var(--primary-light);
+    cursor: pointer;
+    // color:black;
+    height: min-content;
+    width: min-content;
+    box-sizing: border-box;
+}
+scene-details{
+    width: 100%;
+}
+button.list-item-delete-btn{
+    color:var(--txt-color-dark);
+    background:none;
+}
+
+
+
+
+
+
+//==inactive==//
+
+
+
+
+.drag-instruction{
+    // background-color: #ffffff;
+    width: 5%;
+    fill:var(--primary-light);
+    border-radius: 5px;
+    padding:2px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+@media only screen and (max-width: 900px){
+    .drag-instruction{
+        display: none;
+    }
 }

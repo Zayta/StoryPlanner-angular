@@ -36,7 +36,6 @@ h3,h4,h5,h6{
     overflow: wrap;
     width: 100%;
     border:1px solid var(--primary-light);
-    background-color: var(--primary-light);
 }
 
  /* (Optional) Apply a "closed-hand" cursor during drag operation. */
@@ -68,9 +67,8 @@ character-details{
     width: 100%;
 }
 button.list-item-delete-btn{
-    background-color: var(--primary-light);
     cursor: pointer;
-    color:black;
+
     height: min-content;
     width: min-content;
     box-sizing: border-box;

@@ -1,0 +1,40 @@
+.scene-details-wrapper{
+    min-height: 100%;
+    width: 100%;
+    box-sizing: border-box;
+}
+.hidden{
+    display:none;
+}
+.show{
+    display:flex;
+    flex-direction: column;
+    padding:5px;
+    margin:5px;
+    border-radius: 2px;
+}
+textarea, input { 
+    border:1px solid #ccc; 
+ 
+    resize: none;
+    width: 100%; 
+    box-sizing: border-box;
+}
+textarea.para:focus{
+    min-height: 5em;
+}
+input:focus,textarea:focus {
+    
+    outline: none !important;
+    border:1px solid var(--primary-light);
+    box-shadow: 0 0 5px var(--primary-dark);
+}
+
+textarea+textarea{
+    margin-top:5px;
+}
+.scene-title{
+    border-radius: 5px;
+    padding:5px;
+    cursor: pointer;
+}

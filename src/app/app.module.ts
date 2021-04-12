@@ -10,7 +10,6 @@ import { StoryComponent } from './story/story.component';
 import { HttpClientModule } from '@angular/common/http';
 
 
-
 import { DashboardComponent } from './dashboard/dashboard.component';
 import { CharactersListComponent } from './story/characters/characters-list/characters-list.component';
 import { PlotEditorComponent } from './story/plot/plot-editor/plot-editor.component';
@@ -18,6 +17,8 @@ import { CharacterDetailsComponent } from './story/characters/character-details/
 import { HeaderComponent } from './components/header/header.component';
 import { FooterComponent } from './components/footer/footer.component';
 import { SceneDetailsComponent } from './story/plot/scene-details/scene-details.component';
+
+
 @NgModule({
   declarations: [
     AppComponent,
@@ -36,7 +37,7 @@ import { SceneDetailsComponent } from './story/plot/scene-details/scene-details.
     AppRoutingModule,
     FormsModule,
     UIModule,
-    IconsModule
+    IconsModule,
     
   ],
   providers: [],

@@ -3,4 +3,5 @@
   <a *ngFor="let story of stories" [routerLink]="['/story', story.id]">
     {{story.name}}
   </a>
+  <button (click) = 'addStory()'>AddStory</button>
 </div>
