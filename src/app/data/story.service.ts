@@ -1,8 +1,6 @@
 import { Injectable } from '@angular/core';
-import { Story } from './data/Story';
-import { STORIES } from './data/mock-stories';
-import { Observable, of } from 'rxjs';
-import {LocalStorageService} from './local-storage.service';
+import { Story } from './Story';
+import {LocalStorageService} from '../local-storage.service';
 import {v4 as uuidv4} from 'uuid';
 let STORAGE_KEY = 'local_storylist';
 @Injectable({
@@ -32,6 +30,7 @@ export class StoryService {
     
       this.stories.push({
         id: uuidv4(),
+        date:new Date(),
         name: newStoryName,
         characters:charas,
         scenes:scns

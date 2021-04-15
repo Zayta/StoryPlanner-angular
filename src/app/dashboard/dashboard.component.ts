@@ -1,6 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import { Story } from '../data/Story';
-import { StoryService } from '../story.service';
+import { StoryService } from '../data/story.service';
 
 @Component({
   selector: 'dashboard',
@@ -20,13 +20,11 @@ export class DashboardComponent implements OnInit {
     
   }
   addStory(): void {
-    if (this.newStoryName == '') {
-      alert('Name required')
+    if (!this.newStoryName || this.newStoryName == '') {
+      this.newStoryName='New Story'
     }
-    else {
-      
     this.storyService.addStory(this.newStoryName)
-    }
+    
   }
   public deleteStory(story:Story) {
     this.storyService.deleteStory(story);

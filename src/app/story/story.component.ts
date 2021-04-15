@@ -1,7 +1,7 @@
 import { Component, OnInit, Input } from '@angular/core';
 import { ActivatedRoute } from '@angular/router';
 import {Story,Scene} from '../data/Story';
-import {StoryService} from '../story.service'
+import {StoryService} from '../data/story.service'
 import { Location } from '@angular/common';
 import {CharactersListComponent} from './characters/characters-list/characters-list.component';
 import {PlotEditorComponent} from './plot/plot-editor/plot-editor.component';
@@ -31,14 +31,7 @@ export class StoryComponent implements OnInit {
   getStory(id:string): void {
       this.story = this.storyService.getStory(id);
   }
-  addScene(){
-    this.story.scenes.push({
-      id:new Date().toString(),
-      title:'New Title',
-      details:'details'
-    });
-    
-  }
+
   saveStory(): void{
     this.storyService.saveStory(this.story);
   }

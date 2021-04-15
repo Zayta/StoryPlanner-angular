@@ -20,7 +20,7 @@ textarea, input {
     width: 100%; 
     box-sizing: border-box;
 }
-textarea.para:focus{
+textarea.para{
     min-height: 5em;
 }
 input:focus,textarea:focus {

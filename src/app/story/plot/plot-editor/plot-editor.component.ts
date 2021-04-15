@@ -20,13 +20,23 @@ export class PlotEditorComponent implements OnInit {
   ngOnInit(): void {
     
   }
-  
-  remove(scene:Scene){
+  addScene(){
+    this.scenes.push({
+      id:new Date().toString(),
+      title:'New Title',
+      details:'details'
+    });
+    
+  }
+  removeScene(scene:Scene){
     const index: number = this.scenes.indexOf(scene);
     if (index !== -1) {
         this.scenes.splice(index, 1);
     }
   }
+
+
+  //for drag-drop if implemented later
   drop(event: CdkDragDrop<Scene[]>) {
     console.log(event);
 

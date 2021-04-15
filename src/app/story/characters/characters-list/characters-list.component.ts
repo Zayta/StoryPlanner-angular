@@ -28,7 +28,10 @@ export class CharactersListComponent implements OnInit {
   
   
 
-
+  addCharacter(){
+    this.characters.push(new Character());
+    
+  }
   remove(character:Character){
     console.log('removing character...')
     const inSceneIndex: number = this.inScene.indexOf(character);
