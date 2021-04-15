@@ -29,16 +29,18 @@ export class StoryComponent implements OnInit {
    });
   }
   getStory(id:string): void {
-    this.storyService.getStory(id)
-      .subscribe(story => this.story = story);
+      this.story = this.storyService.getStory(id);
   }
   addScene(){
     this.story.scenes.push({
-      id:'New',
+      id:new Date().toString(),
       title:'New Title',
       details:'details'
     });
     
+  }
+  saveStory(): void{
+    this.storyService.saveStory(this.story);
   }
   goBack(): void {
     this.location.back();

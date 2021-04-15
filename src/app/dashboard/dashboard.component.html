@@ -5,8 +5,11 @@
 <button (click) = 'addStory()'>Add Story</button>
 <div></div>
 <div class="stories-menu">
-  <div class = 'book' *ngFor="let story of stories; let index = index;" [routerLink]="['/story', story.id]">
+  <div  *ngFor="let story of getStories(); let index = index;">
+    
+    <button class = 'del'(click) = "deleteStory(story)">X</button>
+    <div class = 'book' [routerLink]="['/story', story.id]">
     {{story.name}}
-    <button class = 'del'(click) = "deleteStory(index)">X</button>
+  </div>
   </div>
 </div>
