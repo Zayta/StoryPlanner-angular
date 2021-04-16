@@ -27,7 +27,7 @@ h1{
     box-sizing: border-box;
 }
 .header-info+.content{
-    margin: 10px;
+    padding: 10px;
 }
 
 button{
@@ -55,6 +55,13 @@ button{
     .plot-editor-container{
         // flex-grow: 2;
         width: 100%!important;
+        margin-bottom:5px;
+        box-sizing: border-box;
+    }
+    .characters-dragdrop-container{
+        margin-top:5px;
+        width: 100%!important;
+        box-sizing: border-box;
     }
 }
 .plot-editor-container{
@@ -66,9 +73,9 @@ button{
     border:1px solid var(--primary-light);
     border-radius: 5px;
 }
-.characters-list-container{
+.characters-dragdrop-container{
     flex-grow: 1;
-    // width: 30%;
+    width: 30%;
     min-height: 100%;
     box-sizing: border-box;
     

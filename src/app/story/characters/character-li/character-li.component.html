@@ -1,0 +1,37 @@
+
+<div class = 'draggable-item'*ngFor="let character of characters; index as index" cdkDrag>
+<div class = 'drag-content'>
+    <div class = 'li-header'>
+    
+    <div class = 'character-name'>
+        {{character.name}}
+        
+    </div>
+    <div class = "opts">
+        
+        <!-- <div class = 'drag-instruction' cdkDragHandle> -->
+            <div class = 'drag-instruction'>
+        <drag-icon class = 'icon'></drag-icon> 
+        </div>
+        <div>
+            <app-edit-icon (click) = "toggleEdit(character)" class = 'icon'></app-edit-icon>
+        </div>
+        <div  >
+            <del-icon (click)="remove(character)" class = 'icon'></del-icon>
+        </div>  
+
+    </div>
+    </div>
+    <div class = 'chara-details'>
+        <div class = 'chara-img'>
+            <img src = "../../../../assets/images/user.svg"/>
+        </div>
+        <div class = 'chara-summary'>
+            {{character.summary}}
+        </div>
+    </div>
+    <div *ngIf="isToggled(character)">
+        <character-details [character] = 'character'></character-details>
+    </div>
+</div>
+</div>

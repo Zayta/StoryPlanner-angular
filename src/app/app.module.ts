@@ -1,6 +1,6 @@
 import { NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
-import { FormsModule } from '@angular/forms';
+import { FormsModule,ReactiveFormsModule } from '@angular/forms';
 import { AppRoutingModule } from './app-routing.module';
 import { IconsModule } from './icons/icons.module'
 import { UIModule } from './shared-ui/ui.module'
@@ -11,12 +11,17 @@ import { HttpClientModule } from '@angular/common/http';
 
 
 import { DashboardComponent } from './dashboard/dashboard.component';
-import { CharactersListComponent } from './story/characters/characters-list/characters-list.component';
+import { CharactersDragDropComponent } from './story/characters/characters-dragdrop/characters-dragdrop.component';
 import { PlotEditorComponent } from './story/plot/plot-editor/plot-editor.component';
 import { CharacterDetailsComponent } from './story/characters/character-details/character-details.component';
 import { HeaderComponent } from './components/header/header.component';
 import { FooterComponent } from './components/footer/footer.component';
 import { SceneDetailsComponent } from './story/plot/scene-details/scene-details.component';
+import { CharacterLiComponent } from './story/characters/character-li/character-li.component';
+import { ViewModeDirective } from './common/view-mode.directive';
+import { EditModeDirective } from './common/edit-mode.directive';
+import { EditableComponent } from './common/editable/editable.component';
+import { EditableOnEnterDirective } from './common/editable-on-enter.directive';
 
 
 @NgModule({
@@ -25,17 +30,18 @@ import { SceneDetailsComponent } from './story/plot/scene-details/scene-details.
     StoryComponent,
     DashboardComponent,
     StoryComponent,
-    CharactersListComponent, 
+    CharactersDragDropComponent, 
     PlotEditorComponent, 
     CharacterDetailsComponent, 
     HeaderComponent, 
-    FooterComponent, SceneDetailsComponent
+    FooterComponent, SceneDetailsComponent, CharacterLiComponent, ViewModeDirective, EditModeDirective, 
+    EditableComponent, EditableOnEnterDirective,
   ],
   imports: [
     BrowserModule,
     HttpClientModule,
     AppRoutingModule,
-    FormsModule,
+    FormsModule, ReactiveFormsModule,
     UIModule,
     IconsModule,
     

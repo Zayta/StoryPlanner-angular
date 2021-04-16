@@ -1,0 +1,17 @@
+
+h1,h2{
+    text-align: center;
+}
+h3,h4,h5,h6{
+    margin:1px 0px 1px 0px;
+}
+.app-characters-dragdrop-wrapper{
+    padding:5px;
+}
+.drop-box{
+    border: 1px dashed var(--primary-dark);
+    border-radius: 5px;
+    padding:5px;
+    min-height: 10vh;
+}
+

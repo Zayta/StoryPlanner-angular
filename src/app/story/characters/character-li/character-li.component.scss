@@ -1,0 +1,95 @@
+.li-header{
+    display: flex;
+    flex-direction: row;
+}
+
+.opts{
+
+    fill:var(--primary-dark);
+    color:var(--primary-dark);
+    padding:2px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: flex-start;
+}
+.opts>*{
+    border-radius: 5px;
+    margin:2px;
+}
+.drag-instruction{
+    
+    cursor: move;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    box-sizing: border-box;
+}
+character-details{
+    width: 100%;
+}
+drag-icon.icon{
+    cursor: move;
+}
+.icon{
+    cursor: pointer;
+    width: 1em;
+    height: min-content;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+
+.chara-details-wrapper{
+    // position:sticky;
+ min-height: 100%;
+ width: 100%;
+ box-sizing: border-box;
+ 
+}
+.character-name{
+    padding:5px;
+    min-height: 100%;
+    width: 100%;
+    display: block;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+.chara-details{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+.chara-img{
+    width: 5vw;
+    height: 5vw;
+}
+.chara-summary{
+    width: 100%;
+    padding:5px;
+    box-sizing: border-box;
+    overflow-wrap: anywhere;
+}
+@media only screen and (max-width: 600px){
+    .character-name{
+        overflow-wrap: anywhere;
+    }
+}
+.draggable-item {
+    background-color: var(--primary-light);
+    display: flex;
+    justify-content: space-between;
+    border-radius: 5px;
+    margin:5px 0 5px 0;
+}
+.drag-content{
+    border-radius: 5px;
+    height: fit-content;
+    display:flex;
+    flex-direction: column;
+    width: 100%;
+    border:1px solid var(--primary-light);
+    padding:5px;
+}

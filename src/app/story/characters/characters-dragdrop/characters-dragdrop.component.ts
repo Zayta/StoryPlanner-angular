@@ -1,5 +1,6 @@
 import { Component, OnInit,Input } from '@angular/core';
 import {Character} from '../../../data/Story';
+import {CharacterLiComponent} from '../character-li/character-li.component';
 import {
   CdkDragDrop,
   moveItemInArray,
@@ -7,11 +8,11 @@ import {
 } from '@angular/cdk/drag-drop';
 
 @Component({
-  selector: 'characters-list',
-  templateUrl: './characters-list.component.html',
-  styleUrls: ['./characters-list.component.scss']
+  selector: 'characters-dragdrop',
+  templateUrl: './characters-dragdrop.component.html',
+  styleUrls: ['./characters-dragdrop.component.scss']
 })
-export class CharactersListComponent implements OnInit {
+export class CharactersDragDropComponent implements OnInit {
   
   @Input() characters:Character[];
   title = 'Characters';
@@ -20,9 +21,11 @@ export class CharactersListComponent implements OnInit {
 
   public inScene: Character[];
   public outOfScene: Character[];
+
   ngOnInit(): void {
     this.inScene=[];
     this.outOfScene=this.characters;
+    
   }
   
   
@@ -32,17 +35,7 @@ export class CharactersListComponent implements OnInit {
     this.characters.push(new Character());
     
   }
-  remove(character:Character){
-    console.log('removing character...')
-    const inSceneIndex: number = this.inScene.indexOf(character);
-    if (inSceneIndex !== -1) {
-        this.inScene.splice(inSceneIndex, 1);
-    }
-    const outSceneIndex: number = this.outOfScene.indexOf(character);
-    if (outSceneIndex !== -1) {
-        this.outOfScene.splice(outSceneIndex, 1);
-    }
-  }
+  
 
   drop(event: CdkDragDrop<Character[]>) {
     console.log(event);
@@ -65,4 +58,6 @@ export class CharactersListComponent implements OnInit {
       );
     }
   }
+
+  
 }

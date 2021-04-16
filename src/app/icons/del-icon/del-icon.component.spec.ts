@@ -1,20 +1,20 @@
 import { ComponentFixture, TestBed } from '@angular/core/testing';
 
-import { CharactersListComponent } from './characters-list.component';
+import { DelIconComponent } from './del-icon.component';
 
-describe('CharactersListComponent', () => {
-  let component: CharactersListComponent;
-  let fixture: ComponentFixture<CharactersListComponent>;
+describe('DelIconComponent', () => {
+  let component: DelIconComponent;
+  let fixture: ComponentFixture<DelIconComponent>;
 
   beforeEach(async () => {
     await TestBed.configureTestingModule({
-      declarations: [ CharactersListComponent ]
+      declarations: [ DelIconComponent ]
     })
     .compileComponents();
   });
 
   beforeEach(() => {
-    fixture = TestBed.createComponent(CharactersListComponent);
+    fixture = TestBed.createComponent(DelIconComponent);
     component = fixture.componentInstance;
     fixture.detectChanges();
   });

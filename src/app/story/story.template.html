@@ -15,8 +15,8 @@
       <div *ngIf="story; else storyNotFound" class = 'plot-editor-container'>
         <plot-editor [scenes]='story.scenes'></plot-editor>
       </div>
-      <div *ngIf="story" class = 'characters-list-container'>
-        <characters-list [characters]='story.characters'></characters-list>
+      <div *ngIf="story" class = 'characters-dragdrop-container'>
+        <characters-dragdrop [characters]='story.characters'></characters-dragdrop>
       </div>
 
     <ng-template #storyNotFound>Story not Found</ng-template>

@@ -21,11 +21,10 @@ export class PlotEditorComponent implements OnInit {
     
   }
   addScene(){
-    this.scenes.push({
-      id:new Date().toString(),
+    this.scenes.push(new Scene({
       title:'New Title',
       details:'details'
-    });
+    }));
     
   }
   removeScene(scene:Scene){

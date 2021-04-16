@@ -3,7 +3,7 @@ import { ActivatedRoute } from '@angular/router';
 import {Story,Scene} from '../data/Story';
 import {StoryService} from '../data/story.service'
 import { Location } from '@angular/common';
-import {CharactersListComponent} from './characters/characters-list/characters-list.component';
+import {CharactersDragDropComponent} from './characters/characters-dragdrop/characters-dragdrop.component';
 import {PlotEditorComponent} from './plot/plot-editor/plot-editor.component';
 @Component({
   selector: 'story',

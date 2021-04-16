@@ -1,0 +1,38 @@
+<div class = 'app-characters-dragdrop-wrapper'>
+  <h2>Characters</h2>
+
+  <div>
+    <!-- container for both list  -->
+      <h5>In Scene:</h5>
+      
+    <div class = 'drop-box'
+      cdkDropList
+      #notInSceneList="cdkDropList"
+      [cdkDropListConnectedTo]="[inSceneList]"
+      [cdkDropListData]="inScene"
+      (cdkDropListDropped)="drop($event)">
+      
+      <character-li [characters] = 'inScene'></character-li>
+      </div>
+    
+    </div>
+
+
+
+    <div>
+  
+      <h5>Not In Scene:</h5>
+      
+    <div class = 'drop-box'
+      cdkDropList
+      #inSceneList="cdkDropList"
+      [cdkDropListConnectedTo]="[notInSceneList]"
+      [cdkDropListData]="outOfScene"
+      (cdkDropListDropped)="drop($event)">
+          <character-li [characters] = 'outOfScene'></character-li>
+      
+    </div>
+
+    <button (click) = 'addCharacter()'>Add Character</button>
+
+</div>
