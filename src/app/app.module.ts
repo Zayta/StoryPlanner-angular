@@ -18,10 +18,6 @@ import { HeaderComponent } from './components/header/header.component';
 import { FooterComponent } from './components/footer/footer.component';
 import { SceneDetailsComponent } from './story/plot/scene-details/scene-details.component';
 import { CharacterLiComponent } from './story/characters/character-li/character-li.component';
-import { ViewModeDirective } from './common/view-mode.directive';
-import { EditModeDirective } from './common/edit-mode.directive';
-import { EditableComponent } from './common/editable/editable.component';
-import { EditableOnEnterDirective } from './common/editable-on-enter.directive';
 
 
 @NgModule({
@@ -34,8 +30,7 @@ import { EditableOnEnterDirective } from './common/editable-on-enter.directive';
     PlotEditorComponent, 
     CharacterDetailsComponent, 
     HeaderComponent, 
-    FooterComponent, SceneDetailsComponent, CharacterLiComponent, ViewModeDirective, EditModeDirective, 
-    EditableComponent, EditableOnEnterDirective,
+    FooterComponent, SceneDetailsComponent, CharacterLiComponent
   ],
   imports: [
     BrowserModule,

@@ -8,13 +8,9 @@ import {Character} from '../../../data/Story';
 export class CharacterDetailsComponent implements OnInit {
 
   @Input() character:Character;
-  showDetails: boolean = false;
   constructor() { }
 
   ngOnInit(): void {
-  }
-  toggleDetails(){
-    this.showDetails = !this.showDetails;       
   }
 
 }

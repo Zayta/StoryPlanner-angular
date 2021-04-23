@@ -7,7 +7,7 @@ import {Scene} from '../../../data/Story'
 })
 export class SceneDetailsComponent implements OnInit {
   @Input() scene:Scene;
-  showDetails: boolean = false;
+  showDetails: boolean = true;
   constructor() { }
 
   ngOnInit(): void {
