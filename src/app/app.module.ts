@@ -18,6 +18,7 @@ import { HeaderComponent } from './components/header/header.component';
 import { FooterComponent } from './components/footer/footer.component';
 import { SceneDetailsComponent } from './story/plot/scene-details/scene-details.component';
 import { CharacterLiComponent } from './story/characters/character-li/character-li.component';
+import { PromptComponent } from './prompts/prompt/prompt.component';
 
 
 @NgModule({
@@ -30,7 +31,7 @@ import { CharacterLiComponent } from './story/characters/character-li/character-
     PlotEditorComponent, 
     CharacterDetailsComponent, 
     HeaderComponent, 
-    FooterComponent, SceneDetailsComponent, CharacterLiComponent
+    FooterComponent, SceneDetailsComponent, CharacterLiComponent, PromptComponent
   ],
   imports: [
     BrowserModule,

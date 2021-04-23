@@ -5,6 +5,7 @@ import {StoryService} from '../data/story.service'
 import { Location } from '@angular/common';
 import {CharactersDragDropComponent} from './characters/characters-dragdrop/characters-dragdrop.component';
 import {PlotEditorComponent} from './plot/plot-editor/plot-editor.component';
+import {PromptComponent} from '../prompts/prompt/prompt.component'
 @Component({
   selector: 'story',
   templateUrl: './story.template.html',

@@ -1,0 +1,7 @@
+<div>
+        <label for="status">Generate </label>
+        <select class="form-control" name="promptType" [(ngModel)]="promptType">
+            <option *ngFor="let x of promptTypes|keyvalue" [ngValue]="x" >{{x.value}}</option>
+        </select>
+    <button (click) = "generate()">Submit</button>
+</div>
