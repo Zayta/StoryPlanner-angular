@@ -6,6 +6,12 @@
   justify-content: space-around;
   align-content: flex-start;
   align-items: flex-start;
+  margin:5px;
+  box-sizing: border-box;
+}
+.add-story{
+    display: flex;
+    justify-content: center;
 }
 .book{
     display: flex;
@@ -18,7 +24,7 @@
     border:2px solid;
     border-color: var(--main-btn-color);
     color:var(--text-color-dark);
-    margin:5px;
+    margin:0 5px 5px 5px;
     
     font-size: large;
 }
@@ -26,6 +32,10 @@
     background-color: var(--primary-light);
     color:var(--text-color-dark);
     cursor: pointer;
+}
+.opts{
+    display: flex;
+    justify-content: center;
 }
 h2{
     display: flex;

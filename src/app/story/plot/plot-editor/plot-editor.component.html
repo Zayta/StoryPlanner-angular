@@ -2,13 +2,27 @@
     <h2>Scenes</h2>
   
     <div>
-      <div >
-            <div class = 'scene-container' *ngFor="let scene of scenes" >
+      <div  cdkDropList
+      #scenesList="cdkDropList"
+      [cdkDropListData]="scenes"
+      (cdkDropListDropped)="drop($event)">
+            <div class = 'scene-container' *ngFor="let scene of scenes" cdkDrag>
             <div class = 'story-content no-select'>
                 
             <scene-details [scene] = 'scene'></scene-details>
             
-            <button (click)="removeScene(scene)" class = 'list-item-delete-btn' >X</button>
+    <div class = "opts">
+        
+      <div  >
+          <del-icon (click)="removeScene(scene)" class = 'icon'></del-icon>
+      </div> 
+      
+      <div class = 'drag-instruction'>
+        
+        <drag-icon class = 'icon' ></drag-icon> 
+        </div> 
+
+  </div>
             </div>
             </div>
         </div>

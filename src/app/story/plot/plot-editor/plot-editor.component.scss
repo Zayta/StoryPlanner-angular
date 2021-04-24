@@ -9,7 +9,41 @@ h1,h2{
 h3,h4,h5,h6{
     margin:1px 0px 1px 0px;
 }
+.opts{
 
+    fill:var(--primary-dark);
+    color:var(--primary-dark);
+    padding:2px;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+}
+.opts>*{
+    border-radius: 5px;
+    margin:5px 0 5px;
+    
+}
+drag-icon.icon{
+    cursor: move;
+}
+.icon{
+    cursor: pointer;
+    width: 1em;
+    height: min-content;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+
+.drag-instruction{
+    
+    cursor: move;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    box-sizing: border-box;
+}
 
 .scene-container {
     display: flex;
@@ -64,20 +98,3 @@ button.list-item-delete-btn{
 //==inactive==//
 
 
-
-
-.drag-instruction{
-    // background-color: #ffffff;
-    width: 5%;
-    fill:var(--primary-light);
-    border-radius: 5px;
-    padding:2px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-}
-@media only screen and (max-width: 900px){
-    .drag-instruction{
-        display: none;
-    }
-}
