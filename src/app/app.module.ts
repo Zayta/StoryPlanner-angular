@@ -14,10 +14,11 @@ import { DashboardComponent } from './dashboard/dashboard.component';
 import { CharactersDragDropComponent } from './story/characters/characters-dragdrop/characters-dragdrop.component';
 import { PlotEditorComponent } from './story/plot/plot-editor/plot-editor.component';
 import { CharacterEditorComponent } from './story/characters/character-editor/character-editor.component';
-import { HeaderComponent } from './components/header/header.component';
-import { FooterComponent } from './components/footer/footer.component';
+import { HeaderComponent } from './misc/header/header.component';
+import { FooterComponent } from './misc/footer/footer.component';
 import { SceneDetailsComponent } from './story/plot/scene-details/scene-details.component';
 import { CharacterLiComponent } from './story/characters/character-li/character-li.component';
+import { ExportComponent } from './export/export.component';
 
 
 @NgModule({
@@ -30,7 +31,7 @@ import { CharacterLiComponent } from './story/characters/character-li/character-
     PlotEditorComponent, 
     CharacterEditorComponent, 
     HeaderComponent, 
-    FooterComponent, SceneDetailsComponent, CharacterLiComponent
+    FooterComponent, SceneDetailsComponent, CharacterLiComponent, ExportComponent
   ],
   imports: [
     BrowserModule,

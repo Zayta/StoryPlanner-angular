@@ -1,0 +1,19 @@
+.export-container{
+    padding:10px;
+}
+.details{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+.scene-display div{
+    margin-left: 10px;
+}
+.story{
+    border:1px solid var(--primary-light);
+    padding:10px;
+}
+.characters-display{
+    width: 39%;
+    overflow-wrap: anywhere;
+}

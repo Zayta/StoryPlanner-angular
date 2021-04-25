@@ -1,0 +1,22 @@
+<div class = 'export-container'>
+<div class = 'story' *ngFor="let s of getStories()">
+    <h1>{{s.name}}</h1>
+    <div class = 'details'>
+        <div>
+    <div class='scene-display' *ngFor ="let scene of s.scenes">
+        <h3>{{scene.title}}</h3>
+        <div>{{scene.details}}</div>
+    </div>
+</div>
+    <div class = 'characters-display'>
+    <h3>Characters</h3>
+    <ul *ngFor ="let c of s.characters">
+        <li>{{c.name}}
+
+            <div>{{c.summary}}</div>
+        </li>
+    </ul>
+</div>
+</div>
+</div>
+</div>
