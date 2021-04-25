@@ -13,7 +13,7 @@ import { HttpClientModule } from '@angular/common/http';
 import { DashboardComponent } from './dashboard/dashboard.component';
 import { CharactersDragDropComponent } from './story/characters/characters-dragdrop/characters-dragdrop.component';
 import { PlotEditorComponent } from './story/plot/plot-editor/plot-editor.component';
-import { CharacterDetailsComponent } from './story/characters/character-details/character-details.component';
+import { CharacterEditorComponent } from './story/characters/character-editor/character-editor.component';
 import { HeaderComponent } from './components/header/header.component';
 import { FooterComponent } from './components/footer/footer.component';
 import { SceneDetailsComponent } from './story/plot/scene-details/scene-details.component';
@@ -28,7 +28,7 @@ import { CharacterLiComponent } from './story/characters/character-li/character-
     StoryComponent,
     CharactersDragDropComponent, 
     PlotEditorComponent, 
-    CharacterDetailsComponent, 
+    CharacterEditorComponent, 
     HeaderComponent, 
     FooterComponent, SceneDetailsComponent, CharacterLiComponent
   ],

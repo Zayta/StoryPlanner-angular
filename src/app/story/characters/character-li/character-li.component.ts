@@ -1,4 +1,4 @@
-import { Component, Input, OnInit } from '@angular/core';
+import { Component, EventEmitter, Input, OnInit, Output } from '@angular/core';
 import { FormArray, FormControl, FormGroup, Validators } from '@angular/forms';
 import {Character} from '../../../data/Story';
 @Component({
@@ -9,6 +9,7 @@ import {Character} from '../../../data/Story';
 export class CharacterLiComponent implements OnInit {
   
   @Input() characters:Character[];
+  @Output() removeCharacter:EventEmitter<Character> = new EventEmitter<Character>();
   public toggledCharacters:Character[];//characters in process of being editted are shown
 
   constructor() { }
@@ -36,10 +37,12 @@ export class CharacterLiComponent implements OnInit {
   }
   remove(character:Character){
     console.log('removing character...')
+
     const index: number = this.characters.indexOf(character);
     if (index !== -1) {
         this.characters.splice(index, 1);
     }
+    this.removeCharacter.emit(character);
   }
 
 }

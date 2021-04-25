@@ -12,7 +12,7 @@
       [cdkDropListData]="inScene"
       (cdkDropListDropped)="drop($event)">
       
-      <character-li [characters] = 'inScene'></character-li>
+      <character-li (removeCharacter)="removeCharacter($event)" [characters] = 'inScene'></character-li>
       </div>
     
     </div>
@@ -29,7 +29,7 @@
       [cdkDropListConnectedTo]="[notInSceneList]"
       [cdkDropListData]="outOfScene"
       (cdkDropListDropped)="drop($event)">
-          <character-li [characters] = 'outOfScene'></character-li>
+          <character-li (removeCharacter)="removeCharacter($event)" [characters] = 'outOfScene'></character-li>
       
     </div>
 

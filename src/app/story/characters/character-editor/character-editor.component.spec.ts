@@ -1,20 +1,20 @@
 import { ComponentFixture, TestBed } from '@angular/core/testing';
 
-import { CharacterDetailsComponent } from './character-details.component';
+import { CharacterEditorComponent } from './character-editor.component';
 
-describe('CharacterDetailsComponent', () => {
-  let component: CharacterDetailsComponent;
-  let fixture: ComponentFixture<CharacterDetailsComponent>;
+describe('CharacterEditorComponent', () => {
+  let component: CharacterEditorComponent;
+  let fixture: ComponentFixture<CharacterEditorComponent>;
 
   beforeEach(async () => {
     await TestBed.configureTestingModule({
-      declarations: [ CharacterDetailsComponent ]
+      declarations: [ CharacterEditorComponent ]
     })
     .compileComponents();
   });
 
   beforeEach(() => {
-    fixture = TestBed.createComponent(CharacterDetailsComponent);
+    fixture = TestBed.createComponent(CharacterEditorComponent);
     component = fixture.componentInstance;
     fixture.detectChanges();
   });

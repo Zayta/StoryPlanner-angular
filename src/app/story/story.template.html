@@ -3,11 +3,11 @@
   <div>
     <h1 *ngIf="story" contentEditable="true" >{{story.name}}</h1>
   </div>
+  <button class = 'main' (click) = "saveStory()">Save</button>
     
 
     <button class = 'main' (click)="goBack()">Back to Dashboard</button>
     
-<button class = 'main' (click) = "saveStory()">Save</button>
 </div>
 <div class = 'content'>
   <div class = 'story-editor'>

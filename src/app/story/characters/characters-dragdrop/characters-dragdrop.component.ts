@@ -24,16 +24,27 @@ export class CharactersDragDropComponent implements OnInit {
 
   ngOnInit(): void {
     this.inScene=[];
-    this.outOfScene=this.characters;
+    this.outOfScene=[];
+    for(let i = 0; i<this.characters.length;i++){
+      this.outOfScene.push(this.characters[i]);
+    }
+
     
   }
   
-  
+  removeCharacter(character:Character) {
+    console.log('removing character from all...')
+      const index: number = this.characters.indexOf(character);
+      if (index !== -1) {
+          this.characters.splice(index, 1);
+      }
+    
+  }
   
 
   addCharacter(){
     this.characters.push(new Character());
-    
+    this.outOfScene.push(new Character());
   }
   
 
